@@ -29,8 +29,10 @@ Level 3
 Level 4
 """""""
 
-figure:: fig1.png
-An image: .. image:: ./fig1.png
+.. image:: fig1.png
+     :height: 200px
+     :alt: alternate fig1 text
+     :align: center
 
 `A link <http://www.google.com>`_
 
@@ -48,3 +50,17 @@ No.    Prime
 3      Yes
 4      No
 ====== ======
+
+The following is a code block::
+
+  def hello():
+      print("Hello world")
+      
+.. code-block:: c
+
+   #include <stdio.h>
+   int main()
+   {
+      printf("Hello, World!");
+      return 0;
+    }
